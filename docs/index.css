@@ -115,6 +115,8 @@ nav {
   color: white;
   text-align: center;
   overflow: hidden;
+  /* Gradient overlay for better contrast */
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
 }
 
 .hero-img {
@@ -125,12 +127,21 @@ nav {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0.6);
+  filter: brightness(0.7);
+  /* Slightly brighter since we have a gradient now */
 }
 
 .hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
+  /* The "Pop" - multi-layered shadow for smoothness */
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
+}
+
+.hero-content p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  font-weight: 500;
 }
 
 /* Sections */
