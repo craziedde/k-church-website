@@ -14,7 +14,10 @@
         <div class="container nav-content">
             <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="Logo" style="height: 40px;">
-                <span style="color: var(--secondary)">КВИНС</span> ВСЕ НАРОДЫ
+                <div class="logo-text">
+                    <div class="logo-main"><span style="color: var(--secondary)">КВИНС</span> ВСЕ НАРОДЫ</div>
+                    <div class="logo-sub">ПРЕСВИТЕРИАНСКАЯ ЦЕРКОВЬ</div>
+                </div>
             </a>
             <div class="nav-links">
                 <a href="index.html">ГЛАВНАЯ</a>
@@ -26,8 +29,9 @@
         </div>
     </nav>
 
-    <header style="background: var(--primary); color: white; padding: 100px 0; text-align: center;">
-        <div class="container">
+    <header class="hero">
+        <img src="images/contact-hero.png" alt="Свяжитесь с нами" class="hero-img" style="filter: brightness(0.4);">
+        <div class="container hero-content">
             <h1>КОНТАКТЫ</h1>
             <p style="margin-top: 20px; font-size: 1.2rem; opacity: 0.9;">Мы всегда рады видеть вас!</p>
         </div>
@@ -49,14 +53,15 @@
 
                 <div class="card">
                     <h3 style="margin-bottom: 25px; color: var(--primary);">Напишите нам</h3>
-                    <form style="display: flex; flex-direction: column; gap: 15px;">
-                        <input type="text" placeholder="Ваше имя"
+                    <form action="https://formspree.io/f/xpzevpoy" method="POST"
+                        style="display: flex; flex-direction: column; gap: 15px;">
+                        <input type="text" name="name" placeholder="Ваше имя" required
                             style="padding: 12px; border: 1px solid var(--border); border-radius: 8px;">
-                        <input type="email" placeholder="Email"
+                        <input type="email" name="_replyto" placeholder="Email" required
                             style="padding: 12px; border: 1px solid var(--border); border-radius: 8px;">
-                        <textarea placeholder="Сообщение" rows="4"
+                        <textarea name="message" placeholder="Сообщение" rows="4" required
                             style="padding: 12px; border: 1px solid var(--border); border-radius: 8px;"></textarea>
-                        <button type="button" class="btn btn-primary">Отправить</button>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -67,8 +72,10 @@
         <div class="container">
             <div
                 style="width: 100%; height: 450px; background: #e2e8f0; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: var(--shadow);">
-                <p style="color: var(--text-muted); font-weight: 500;">[ Здесь будет интерактивная карта Google Maps ]
-                </p>
+                <iframe
+                    src="https://maps.google.com/maps?q=143-17%20Franklin%20Avenue,%20Flushing,%20NY%2011355&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
                 <!-- In a real scenario, I would embed an iframe here -->
             </div>
         </div>
@@ -78,6 +85,8 @@
         <div class="container footer-content">
             <div>
                 <h3>КВИНС ВСЕ НАРОДЫ</h3>
+                <p style="font-size: 0.75rem; font-weight: 600; opacity: 0.8; margin-top: 5px;">ПРЕСВИТЕРИАНСКАЯ ЦЕРКОВЬ
+                </p>
                 <p style="margin-top: 20px; opacity: 0.8;">
                     Русскоязычная пресвитерианская церковь в самом сердце Флашинга, Нью-Йорк.
                 </p>
