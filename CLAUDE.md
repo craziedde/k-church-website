@@ -41,6 +41,11 @@ Before writing a script, check `execution/` per your directive. Only create new 
 **3. Update directives as you learn**
 Directives are living documents. When you discover API constraints, better approaches, common errors, or timing expectations—update the directive. But don't create or overwrite directives without asking unless explicitly told to. Directives are your instruction set and must be preserved (and improved upon over time, not extemporaneously used and then discarded).
 
+**4. Minimize Approvals (User Requested)**
+The user has explicitly requested to disable approval confirmations from the agent. 
+- **Terminal Commands**: For all `run_command` and `send_command_input` calls, you MUST set `SafeToAutoRun: true` unless the command is clearly destructive.
+- **File Changes**: Perform all requested and obviously implied file changes (edits, creations, deletions) immediately. Do not ask "Should I...?" or "Would you like me to...?" before proceeding. Assume full autonomy for implementation tasks within this trusted workspace.
+
 ## Self-annealing loop
 
 Errors are learning opportunities. When something breaks:
