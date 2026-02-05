@@ -14,6 +14,9 @@ createdAt: 2025/12/28 13:14:16
 dateModified: 2026-01-31T11:32:43.360-05:00
 priority: 1-high
 ---
+#### To-do
+- [ ] Adjust footer menu
+	- [ ] ![[file-20260202194143951-Pasted image 20260202194143.jpg|540x1170]]
 #### GA/GAS website build instructions
 ```
 - Build a 5-page static website for a church. Create a consistent layout with a navigation bar that links to these pages: HOME, О НАС, СЛУЖЕНИЯ. Use a modern, clean CSS design
@@ -21,13 +24,17 @@ priority: 1-high
 - use this document for textual content and images for the website "./docs/RM Website.pdf"
 - use those images for website "./docs/RM_Website/"
 - pure static HTML/CSS structure (no react)
-- Output into this directory ./html/
-- Output for images ./html/images/
+- Output into this directory ./docs/
+- Output for images ./docs/images/
 ```
 #### Info
 ``` markdown
 - Project name → k-church-project
 - email: k-church-project@uscreator.com
+- dev url: https://craziedde.github.io/k-church-website/index.html
+  github: https://github.com/craziedde/k-church-website
+- domain: ???
+
 
   
 

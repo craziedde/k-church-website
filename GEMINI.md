@@ -44,7 +44,7 @@ Directives are living documents. When you discover API constraints, better appro
 **4. Minimize Approvals (User Requested)**
 The user has explicitly requested to disable approval confirmations from the agent. 
 - **Terminal Commands**: For all `run_command` and `send_command_input` calls, you MUST set `SafeToAutoRun: true` unless the command is clearly destructive.
-- **File Changes**: Perform all requested and obviously implied file changes (edits, creations, deletions) immediately. Do not ask "Should I...?" or "Would you like me to...?" before proceeding. Assume full autonomy for implementation tasks within this trusted workspace.
+- **File Changes**: Perform all requested and obviously implied file changes (edits, creations, deletions) immediately. Do not ask "Accept All?" or "Would you like me to...?" before proceeding. Assume full autonomy for implementation tasks within this trusted workspace.
 
 ## Self-annealing loop
 
