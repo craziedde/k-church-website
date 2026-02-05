@@ -4,8 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Объявления | Квинс Все Народы</title>
+    <title>Пожертвовать | Квинс Все Народы</title>
+    <meta name="description" content="Поддержите служение нашей церкви. Информация о пожертвованиях через Zelle.">
     <link rel="stylesheet" href="index.css">
+    <style>
+        .donate-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .donate-card {
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+            padding: 60px 40px;
+        }
+
+        .zelle-logo {
+            width: 140px;
+            margin-bottom: 30px;
+        }
+
+        .donate-info {
+            font-size: 1.2rem;
+            margin: 40px 0;
+            padding: 25px;
+            background: var(--bg);
+            border-radius: var(--radius);
+            border: 2px dashed var(--primary-light);
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .donate-info:hover {
+            border-style: solid;
+            background: #f0f7ff;
+            transform: scale(1.02);
+        }
+
+        .donate-instruction {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .bible-verse {
+            font-style: italic;
+            color: var(--primary);
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,48 +88,42 @@
         </div>
     </nav>
 
-
-
     <header class="hero">
-        <img src="images/announcements-hero.png" alt="Церковные Объявления" class="hero-img"
-            style="filter: brightness(0.4);">
+        <img src="images/donate-hero.png" alt="Пожертвование" class="hero-img" style="filter: brightness(0.6);">
         <div class="container hero-content">
-            <h1>ОБЪЯВЛЕНИЯ</h1>
-            <p style="margin-top: 20px; font-size: 1.2rem; opacity: 0.9;">Будьте в курсе событий нашей церкви</p>
+            <h1>ПОДДЕРЖАТЬ СЛУЖЕНИЕ</h1>
+            <p style="font-size: 1.3rem; margin-top: 15px;">Ваш вклад в развитие духовной семьи</p>
         </div>
     </header>
 
     <section>
         <div class="container">
-            <div class="grid">
-                <!-- Morning Prayers -->
-                <div class="card" style="border-left: 5px solid var(--primary);">
-                    <h3 style="margin-bottom: 15px;">Утренние Молитвы</h3>
-                    <p style="margin-bottom: 20px;">Присоединяйтесь к нам каждое утро для молитвы и духовного
-                        наставления в Zoom.</p>
-                    <div style="background: var(--bg); padding: 20px; border-radius: 8px;">
-                        <p><strong>Время:</strong> 6:00 AM</p>
-                        <p><strong>Zoom ID:</strong> 917 940 0596</p>
-                        <p><strong>Пароль:</strong> 111</p>
-                    </div>
-                </div>
-
-                <!-- RMYG Retreat -->
-                <div class="card" style="border-left: 5px solid var(--secondary);">
-                    <h3 style="margin-bottom: 15px;">Молодежный Ретирит</h3>
-                    <p><strong>RMYG Retreat: Hearing God</strong></p>
-                    <p style="margin-top: 10px;">Проведите незабываемое время в общении с Богом и друзьями.</p>
-                    <p style="margin-top: 10px; color: var(--text-muted);">
-                        73 Holmes Mill Rd, Cream Ridge, NJ 08514
+            <div class="donate-container">
+                <div class="card donate-card">
+                    <img src="https://zellepay.com/themes/custom/zelle_theme/logo.svg" alt="Zelle" class="zelle-logo"
+                        onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b5/Zelle_logo.svg'">
+                    <h2 style="margin-bottom: 25px;">Пожертвование через Zelle</h2>
+                    <p class="donate-instruction">
+                        Вы можете направить ваши добровольные пожертвования и десятины быстро и безопасно через систему
+                        <strong>Zelle</strong>.
                     </p>
-                </div>
 
-                <!-- Tres Dias -->
-                <div class="card" style="border-left: 5px solid var(--primary-light);">
-                    <h3 style="margin-bottom: 15px;">Трес Диас (Узбекистан)</h3>
-                    <p>Первая неделя мая в Ташкенте. Собираем пожертвования для братской церкви.</p>
-                    <a href="contact.html" class="btn btn-outline" style="margin-top: 20px; font-size: 0.9rem;">Как
-                        помочь?</a>
+                    <div class="donate-info">
+                        <strong>Email:</strong> qanchurch@gmail.com<br>
+                        <strong>Телефон:</strong> (917) 940-0596
+                    </div>
+
+                    <p class="donate-instruction">
+                        Пожалуйста, укажите ваше имя и назначение платежа в комментарии<br>
+                        <span style="font-size: 0.95rem; opacity: 0.8;">(например, «Десятина» или
+                            «Пожертвование»)</span>
+                    </p>
+
+                    <div class="bible-verse">
+                        «Каждый уделяй по расположению сердца, не с огорчением и не с принуждением; ибо доброхотно
+                        дающего любит Бог»<br>
+                        <strong style="display: block; margin-top: 10px;">2 Коринфянам 9:7</strong>
+                    </div>
                 </div>
             </div>
         </div>
