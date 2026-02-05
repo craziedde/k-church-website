@@ -19,11 +19,21 @@
             position: relative;
             z-index: 10;
             padding: 60px 40px;
+            transition: none !important;
+        }
+
+        /* Disable any inherited card hover effects */
+        .donate-card:hover {
+            transform: none !important;
+            box-shadow: var(--shadow) !important;
         }
 
         .zelle-logo {
             width: 140px;
+            height: 48px;
+            /* Fixed height is most stable */
             margin-bottom: 30px;
+            object-fit: contain;
         }
 
         .donate-info {
@@ -34,13 +44,7 @@
             border-radius: var(--radius);
             border: 2px dashed var(--primary-light);
             display: inline-block;
-            transition: all 0.3s ease;
-        }
-
-        .donate-info:hover {
-            border-style: solid;
-            background: #f0f7ff;
-            transform: scale(1.02);
+            transition: none !important;
         }
 
         .donate-instruction {
@@ -100,8 +104,6 @@
         <div class="container">
             <div class="donate-container">
                 <div class="card donate-card">
-                    <img src="https://zellepay.com/themes/custom/zelle_theme/logo.svg" alt="Zelle" class="zelle-logo"
-                        onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b5/Zelle_logo.svg'">
                     <h2 style="margin-bottom: 25px;">Пожертвование через Zelle</h2>
                     <p class="donate-instruction">
                         Вы можете направить ваши добровольные пожертвования и десятины быстро и безопасно через систему
